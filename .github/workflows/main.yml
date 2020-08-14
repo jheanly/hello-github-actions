@@ -9,5 +9,5 @@ jobs:
       - uses: actions/checkout@v1
       - uses: ./action-a
         with:
-          BRANCH_NAME: github.event.pull_request.head.ref
+          BRANCH_NAME: ${{ github.event.pull_request.head.ref }}
           MY_NAME: "JAMES"
