@@ -1,17 +1,17 @@
 name: "Hello Actions"
 description: "Greet someone"
-author: "octocat@github.com"
 
 inputs:
   BRANCH_NAME:
-    description: "Who to greet"
+    description: "Branch being closed"
     required: true
     default: "DEFAULT"
+
+  MY_NAME:
+      description: "Who to greet"
+      required: true
+      default: "WORLD"    
 
 runs:
   using: "docker"
   image: "Dockerfile"
-
-branding:
-  icon: "mic"
-  color: "purple"

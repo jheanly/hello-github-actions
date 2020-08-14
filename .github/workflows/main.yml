@@ -10,3 +10,4 @@ jobs:
       - uses: ./action-a
         with:
           BRANCH_NAME: github.event.pull_request.head.ref
+          MY_NAME: "JAMES"
