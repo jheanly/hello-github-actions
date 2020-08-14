@@ -6,6 +6,7 @@ inputs:
   BRANCH_NAME:
     description: "Who to greet"
     required: true
+    default: "DEFAULT"
 
 runs:
   using: "docker"
